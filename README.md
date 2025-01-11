@@ -13,8 +13,12 @@ cdk --profile your_profile bootstrap
 cdk --profile your_profile deploy "StoreStack" --require-approval never
 ```
 
-### 4.DownLoad Models and Upload S3
-like the image below
+### 4.Upload Your Assets to S3
+set the folder names to the following
+- embeddings/
+- Lora/
+- Stable-diffusion/
+- VAE/
 
 
 ### 5.Deploy MainStack(EC2)
