@@ -31,7 +31,7 @@ export const env = {
   },
   ec2: {
     instanceType: ec2.InstanceType.of(ec2.InstanceClass.G4DN, ec2.InstanceSize.XLARGE),
-    ami: "ami-00b43416405584fa9",
+    ami: "ami-020aa8e2ad29a5c33",
   },
   ebs: {
     volumeSize: 100,

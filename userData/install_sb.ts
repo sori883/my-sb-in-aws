@@ -41,16 +41,16 @@ WantedBy=multi-user.target
 EOF
 
 cd /home/ubuntu/stable-diffusion-webui-forge/embeddings/
-aws s3 cp s3://sb-s3bucket-ue1/embeddings ./ --recursive
+sudo aws s3 cp s3://sb-s3bucket-ue1/embeddings ./ --recursive
 
 cd /home/ubuntu/stable-diffusion-webui-forge/models/Lora
-aws s3 cp s3://sb-s3bucket-ue1/Lora ./ --recursive
+sudo aws s3 cp s3://sb-s3bucket-ue1/Lora ./ --recursive
 
 cd /home/ubuntu/stable-diffusion-webui-forge/models/VAE
-aws s3 cp s3://sb-s3bucket-ue1/VAE ./ --recursive
+sudo aws s3 cp s3://sb-s3bucket-ue1/VAE ./ --recursive
 
 cd /home/ubuntu/stable-diffusion-webui-forge/models/Stable-diffusion
-aws s3 cp s3://sb-s3bucket-ue1/Stable-diffusion/ ./ --recursive
+sudo aws s3 cp s3://sb-s3bucket-ue1/Stable-diffusion ./ --recursive
 
 systemctl enable sd-webui
 systemctl start sd-webui
