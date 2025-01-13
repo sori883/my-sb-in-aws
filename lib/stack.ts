@@ -6,6 +6,7 @@ import { SecurityGroup } from "~/resources/security-group";
 import { Role } from "~/resources/role";
 import { Ec2 } from "~/resources/ec2";
 import { S3Bucket } from "~/resources/s3";
+import { StopNotificationStack } from "~/resources/spot-notification";
 
 export class MainStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps) {
@@ -29,6 +30,8 @@ export class MainStack extends Stack {
       ec2SecurityGroup: sg.ec2SecurityGroup,
       ec2Role: role.ec2Role,
     });
+
+    new StopNotificationStack(this);
   }
 }
 

@@ -10,6 +10,7 @@ export const nodeEnv = {
   COMMAND_GUILD_ID: process.env.COMMAND_GUILD_ID!,
   SB_USERNAME: process.env.SB_USERNAME!,
   SB_PASSWORD: process.env.SB_PASSWORD!,
+  SNS_MAIL: process.env.SNS_MAIL!
 };
 
 export const env = {
